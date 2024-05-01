@@ -1,10 +1,42 @@
 import React from "react";
-import user_img_nav from "../assets/img/user_img_nav.svg";
+
+import shopping_bag from "../assets/img/shopping_bag.svg";
 
 function LeftNavUser() {
   return (
     <div className="homeMain__left_nav_bottom_clicked ">
-      <img src={user_img_nav} alt="" width="100%" />
+      <div className="homeMain__left_nav_bottom_clicked_compo">
+        <img
+          src={shopping_bag}
+          alt=""
+          className="left_nav_bottom_clicked_img"
+        />
+        <span className="left_nav_bottom_clicked_txt">Plan</span>
+      </div>
+      <div className="homeMain__left_nav_bottom_clicked_compo">
+        <img
+          src={shopping_bag}
+          alt=""
+          className="left_nav_bottom_clicked_img"
+        />
+        <span className="left_nav_bottom_clicked_txt">Plan</span>
+      </div>
+      <div className="homeMain__left_nav_bottom_clicked_compo">
+        <img
+          src={shopping_bag}
+          alt=""
+          className="left_nav_bottom_clicked_img"
+        />
+        <span className="left_nav_bottom_clicked_txt">Plan</span>
+      </div>
+      <div className="homeMain__left_nav_bottom_clicked_compo">
+        <img
+          src={shopping_bag}
+          alt=""
+          className="left_nav_bottom_clicked_img"
+        />
+        <span className="left_nav_bottom_clicked_txt">Plan</span>
+      </div>
     </div>
   );
 }

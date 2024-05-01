@@ -17,8 +17,6 @@ function LeftNav() {
 
   const showSidebar = () => setLeftNavUserShowed(!LeftNavUserShowed);
 
-  console.log(LeftNavUserShowed);
-
   return (
     <nav className="homeMain__left_nav">
       <div className="homeMain__left_nav_top">
