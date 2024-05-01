@@ -224,7 +224,44 @@ footer {
   justify-content: center;
   background: #d1d2df;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 .homeMain__left_nav_top {
   width: 100%;
+}
+
+.homeMain__left_nav_compo {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  cursor: pointer;
+}
+.homeMain__left_nav_compo_img {
+  margin-right: 10px;
+}
+
+.homeMain__left_nav_top_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.homeMain__left_nav_top_bottom_user_info {
+  display: flex;
+  align-items: center;
+}
+
+.homeMain__left_nav_top_bottom_img {
+  margin-right: 15px;
+}
+
+.homeMain__left_nav_bottom_clicked {
+  background: #a8a8a8;
+  position: absolute;
+  left: 240px;
+  bottom: 20vh;
+  display: flex;
+  width: 240px;
 }
