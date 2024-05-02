@@ -3,3 +3,9 @@ export const increment = () => {
     type: "INCREMENT",
   };
 };
+
+export const toggleNav = () => {
+  return {
+    type: "TOGGLE_NAV",
+  };
+};

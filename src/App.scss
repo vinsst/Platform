@@ -216,15 +216,43 @@ footer {
   justify-content: space-between;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 629px) {
   .homeMain__left_nav {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: -10;
+    visibility: hidden;
+  }
+}
+.homeMain__left_nav_burger {
+  min-width: 240px;
+  background: #f1f2f8;
+  padding: 40px 20px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 630px) {
+  .homeMain__left_nav_burger {
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -10;
     visibility: hidden;
   }
+}
+
+.homeMain__left_nav_logoBurger {
+  display: flex;
+
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .homeMain__left_nav_logo {
@@ -234,7 +262,6 @@ footer {
   align-items: center;
   justify-content: center;
   background: #d1d2df;
-  margin-bottom: 50px;
   cursor: pointer;
 }
 .homeMain__left_nav_top {
@@ -298,7 +325,7 @@ footer {
 }
 @media (max-width: 900px) {
   .rightMain_container {
-    padding: 80px 40px;
+    padding: 40px 40px;
   }
 }
 
@@ -308,10 +335,39 @@ footer {
   color: #5d5d65;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 
 .rightMain__content_slash {
   margin: 0 5px;
+}
+
+.rightMain__content_routes_content {
+  display: flex;
+  align-items: center;
+}
+
+.rightMain__content_routes_burger {
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+}
+
+@media (min-width: 630px) {
+  .rightMain__content_routes_burger {
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+  }
+}
+
+.rightMain__content_routes_burger_line {
+  height: 25%;
+  background: #21222d;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .rightMain__content_add {
@@ -490,4 +546,33 @@ footer {
 
 .space_inst_zero {
   height: 100px;
+}
+
+.rightMain__content_service_btn_save {
+  display: flex;
+  background: #21222d;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rightMain__content_service_btn_save_blured {
+  display: flex;
+  background: #21222d;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+  visibility: hidden;
 }
