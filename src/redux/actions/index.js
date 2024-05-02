@@ -1,13 +1,5 @@
-export const increment = (index) => {
+export const increment = () => {
   return {
-    type: "LIKE-INCREMENT",
-    index,
-  };
-};
-
-export const decrement = (index) => {
-  return {
-    type: "LIKE-DECREMENT",
-    index,
+    type: "INCREMENT",
   };
 };

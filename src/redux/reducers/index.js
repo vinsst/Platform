@@ -1,10 +1,8 @@
-import counterReducer from "./like-counter";
-import loggedReducer from "./isLogged";
+import counterReducer from "./counter";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
   counterReducer,
-  loggedReducer,
 });
 
 export default allReducers;

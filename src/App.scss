@@ -216,6 +216,17 @@ footer {
   justify-content: space-between;
 }
 
+@media (max-width: 630px) {
+  .homeMain__left_nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+  }
+}
+
 .homeMain__left_nav_logo {
   width: 100px;
   height: 50px;
@@ -283,7 +294,7 @@ footer {
 
 .rightMain_container {
   width: 100%;
-  padding: 80px;
+  padding: 40px 80px;
 }
 @media (max-width: 900px) {
   .rightMain_container {
@@ -382,6 +393,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background: #f1f2f8;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 850px) {
@@ -409,6 +421,8 @@ footer {
 
 .rightMain__content_service_txt {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 850px) {
@@ -457,4 +471,23 @@ footer {
 
 .rightMain__content_service_btn {
   cursor: pointer;
+}
+
+.rightMain__content_service_txt_title_input {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.rightMain__content_service_txt_title_txtArea {
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.space_inst_zero {
+  height: 100px;
 }

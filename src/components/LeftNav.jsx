@@ -18,7 +18,7 @@ function LeftNav() {
   const showSidebar = () => setLeftNavUserShowed(!LeftNavUserShowed);
 
   return (
-    <nav className="homeMain__left_nav">
+    <nav className="homeMain__left_nav homeMain__left_nav_inactive">
       <div className="homeMain__left_nav_top">
         <div className="homeMain__left_nav_logo">Logo</div>
         <LeftNavCompo img={nav_left} text="Dashboard" />
