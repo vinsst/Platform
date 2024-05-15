@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { toggleNav } from "../redux/actions";
-import hatRoutes from "../assets/img/hatRoutes.svg";
+import { toggleNav } from "../../redux/actions";
+import hatRoutes from "../../assets/img/hatRoutes.svg";
 
 function RightMainRoutes() {
   const dispatch = useDispatch();

@@ -576,3 +576,69 @@ footer {
   cursor: pointer;
   visibility: hidden;
 }
+
+.login_leftVideo {
+  width: 540px;
+  background: #f1f2f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_RightMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  flex: 1;
+}
+
+.login__RightMain_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 675px;
+  justify-content: space-between;
+}
+
+.login__RightMain_inputs {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__RightMain_welcome {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+}
+
+.login__RightMain_el_sign_up_btn {
+  display: flex;
+  width: 420px;
+  height: 50px;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #21222d;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.login__RightMain_input {
+  width: 420px;
+  height: 40px;
+  padding: 12px 20px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px;
+  border: 1px solid #8e8f9b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}

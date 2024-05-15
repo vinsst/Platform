@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../redux/actions";
+import { increment } from "../../redux/actions";
 
 function RightMainAdd() {
   const [countServices, setCountServices] = useState(0);

@@ -1,7 +1,7 @@
 import React from "react";
 
-import user_img_nav from "../assets/img/user_img_nav.svg";
-import arrRight from "../assets/img/arrRight.svg";
+import user_img_nav from "../../assets/img/user_img_nav.svg";
+import arrRight from "../../assets/img/arrRight.svg";
 
 function LeftNavCompoBottom(props) {
   return (

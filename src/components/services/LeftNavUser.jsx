@@ -1,14 +1,14 @@
 import React from "react";
 
-import LeftNavUserCompo from "../components/LeftNavUserCompo";
+import LeftNavUserCompo from "./LeftNavUserCompo";
 
-import shopping_bag from "../assets/img/shopping_bag.svg";
-import user from "../assets/img/user.svg";
-import fluent_payment from "../assets/img/fluent_payment.svg";
-import calendar from "../assets/img/calendar.svg";
-import file_text from "../assets/img/file_text.svg";
-import alertInfocircle from "../assets/img/alertInfocircle.svg";
-import logOut from "../assets/img/logOut.svg";
+import shopping_bag from "../../assets/img/shopping_bag.svg";
+import user from "../../assets/img/user.svg";
+import fluent_payment from "../../assets/img/fluent_payment.svg";
+import calendar from "../../assets/img/calendar.svg";
+import file_text from "../../assets/img/file_text.svg";
+import alertInfocircle from "../../assets/img/alertInfocircle.svg";
+import logOut from "../../assets/img/logOut.svg";
 
 function LeftNavUser() {
   return (

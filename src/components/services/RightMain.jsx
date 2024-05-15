@@ -2,10 +2,10 @@ import React from "react";
 
 import { useSelector } from "react-redux";
 
-import RightMainRoutes from "../components/RightMainRoutes";
-import RightMainAdd from "../components/RightMainAdd";
-import RightMainZero from "../components/RightMainZero";
-import RightMainService from "../components/RightMainService";
+import RightMainRoutes from "./RightMainRoutes";
+import RightMainAdd from "./RightMainAdd";
+import RightMainZero from "./RightMainZero";
+import RightMainService from "./RightMainService";
 
 function RightMain() {
   const { services } = useSelector((state) => state.counterReducer);

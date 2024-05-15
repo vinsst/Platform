@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import LeftNav from "../components/LeftNav";
-import RightMain from "../components/RightMain";
+import LeftNav from "../components/services/LeftNav";
+import RightMain from "../components/services/RightMain";
 
 function Platform() {
   return (

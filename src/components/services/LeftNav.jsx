@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 import { useDispatch } from "react-redux";
-import { toggleNav } from "../redux/actions";
+import { toggleNav } from "../../redux/actions";
 
 import LeftNavCompo from "./LeftNavCompo";
 import LeftNavCompoBottom from "./LeftNavCompoBottom";
-import LeftNavUser from "../components/LeftNavUser";
+import LeftNavUser from "./LeftNavUser";
 
-import nav_left from "../assets/img/nav_left.svg";
-import file_text from "../assets/img/file_text.svg";
-import calendar from "../assets/img/calendar.svg";
-import message_circle from "../assets/img/message_circle.svg";
-import tabler_folder from "../assets/img/tabler_folder.svg";
-import tabler_list_check from "../assets/img/tabler_list_check.svg";
-import tabler_subtask from "../assets/img/tabler_subtask.svg";
+import nav_left from "../../assets/img/nav_left.svg";
+import file_text from "../../assets/img/file_text.svg";
+import calendar from "../../assets/img/calendar.svg";
+import message_circle from "../../assets/img/message_circle.svg";
+import tabler_folder from "../../assets/img/tabler_folder.svg";
+import tabler_list_check from "../../assets/img/tabler_list_check.svg";
+import tabler_subtask from "../../assets/img/tabler_subtask.svg";
 
 function LeftNav() {
   const [LeftNavUserShowed, setLeftNavUserShowed] = useState(false);

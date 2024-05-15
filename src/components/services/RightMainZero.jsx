@@ -1,6 +1,6 @@
 import React from "react";
 
-import platform1_img_img from "../assets/img/platform1_img_img.svg";
+import platform1_img_img from "../../assets/img/platform1_img_img.svg";
 
 function RightMainZero() {
   return (
