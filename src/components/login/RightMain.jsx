@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/img/logo.svg";
 
@@ -14,32 +15,37 @@ function RightMain() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/signup", {
-        email,
-        password,
-        name,
-        lastname,
-        login,
-        telephone,
-      });
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        // /api/signup
+        {
+          email,
+          password,
+          name,
+          lastname,
+          login,
+          telephone,
+        }
+      );
       console.log(response.data);
     } catch (error) {
       console.error(error);
     }
   };
+
   return (
     <div className="login_RightMain">
       <div className="login__RightMain_content">
         <img
           src={logo}
           alt=""
-          className="login__RightMain_el_logo login__RightMain_el"
+          className="login__RightMain_el_logo"
           width="100px"
         />
         <span className="login__RightMain_welcome">Welcome!</span>
         <form className="login__RightMain_inputs" onSubmit={handleSubmit}>
           <input
-            type="name"
+            type="text"
             className="login__RightMain_input"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -47,7 +53,7 @@ function RightMain() {
             required
           />
           <input
-            type="lastname"
+            type="text"
             className="login__RightMain_input"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
@@ -55,7 +61,7 @@ function RightMain() {
             required
           />
           <input
-            type="login"
+            type="text"
             className="login__RightMain_input"
             value={login}
             onChange={(e) => setLogin(e.target.value)}
@@ -70,18 +76,8 @@ function RightMain() {
             placeholder="Password"
             required
           />
-          {/* <input
-            type="text"
-            className="login__RightMain_input"
-            placeholder="Company name"
-          />
           <input
             type="text"
-            className="login__RightMain_input"
-            placeholder="What does the supplier do?"
-          /> */}
-          <input
-            type="telephone"
             className="login__RightMain_input"
             value={telephone}
             onChange={(e) => setTelephone(e.target.value)}
@@ -96,18 +92,15 @@ function RightMain() {
             placeholder="E-mail"
             required
           />
+          <button className="login__RightMain_el_sign_up_btn" type="submit">
+            <span className="login__RightMain_el_sign_up_btn_txt">Sign Up</span>
+          </button>
         </form>
-
-        <div className=" login__RightMain_el_sign_up_btn">
-          <span className="login__RightMain_el_sign_up_btn_txt" type="submit">
-            Sign Up
-          </span>
-        </div>
-        <div className=" login__RightMain_el_have_acc">
+        <Link to="/login" className="login__RightMain_el_have_acc">
           <span className="login__RightMain_el_txt">
             Already have an account? Sign In
           </span>
-        </div>
+        </Link>
       </div>
     </div>
   );

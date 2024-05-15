@@ -585,6 +585,14 @@ footer {
   justify-content: center;
 }
 
+@media (max-width: 950px) {
+  .login_leftVideo {
+    visibility: hidden;
+    position: absolute;
+    z-index: -10;
+  }
+}
+
 .login_RightMain {
   display: flex;
   align-items: center;
@@ -592,22 +600,19 @@ footer {
   font-size: 14px;
   font-weight: 400;
   flex: 1;
+  padding: 20px;
 }
 
 .login__RightMain_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 675px;
-  justify-content: space-between;
 }
 
 .login__RightMain_inputs {
   display: flex;
   flex-direction: column;
-  height: 360px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .login__RightMain_welcome {
@@ -615,6 +620,7 @@ footer {
   font-weight: 600;
   line-height: 48px;
   text-align: center;
+  margin: 24px 0 0 0;
 }
 
 .login__RightMain_el_sign_up_btn {
@@ -628,6 +634,14 @@ footer {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  margin: 24px 0 0 0;
+  cursor: pointer;
+}
+
+.login__RightMain_el_have_acc {
+  margin: 24px 0 0 0;
+  cursor: pointer;
+  color: #535460;
 }
 
 .login__RightMain_input {
@@ -641,4 +655,25 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin: 24px 0 0 0;
+}
+
+.login__RightMainLogin_inputs {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__RightMain_el_forgotpass {
+  width: 100%;
+  text-align: right;
+  margin-top: 24px;
+  cursor: pointer;
+  color: #535460;
+}
+
+.login__RightMain_email_send_txt {
+  margin-top: 16px;
 }

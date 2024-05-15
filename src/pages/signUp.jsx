@@ -1,15 +1,15 @@
 import React from "react";
 
 import LeftVideo from "../components/login/LeftVideo";
-import RightMainLogin from "../components/login/RightMainLogin";
+import RightMain from "../components/login/RightMain";
 
-function login() {
+function SignUp() {
   return (
     <main className="homeMain">
       <LeftVideo />
-      <RightMainLogin />
+      <RightMain />
     </main>
   );
 }
 
-export default login;
+export default SignUp;
