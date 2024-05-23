@@ -780,6 +780,19 @@ footer {
   margin-bottom: 30px;
 }
 
+.add__supplier_container {
+  margin-bottom: 30px;
+}
+
+.add__supplier_input_container {
+  position: relative;
+}
+
+.add__supplier_container_top {
+  display: flex;
+  margin-bottom: 24px;
+}
+
 .input-label {
   position: absolute;
   top: -10px;
@@ -802,6 +815,23 @@ footer {
 
 .add__genInfo_in2 {
   height: 126px;
+}
+
+.add__supplier_inp {
+  padding: 12px 20px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #21222d;
+  height: 40px;
+}
+
+.add__supplier_inp_left {
+  width: 360px;
+}
+
+.add__supplier_inp_right {
+  width: 270px;
+  margin-left: 30px;
 }
 
 .add__prices_checkBoxes {
@@ -1011,4 +1041,15 @@ footer {
   font-weight: 400;
   line-height: 21px;
   margin-bottom: 30px;
+}
+
+.AddSupplierContact_h {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+
+.AddSupplierContact_inputs {
+  display: flex;
 }
