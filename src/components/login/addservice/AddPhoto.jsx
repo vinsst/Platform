@@ -8,6 +8,7 @@ import { addUploadedPhoto } from "../../../redux/actions";
 function AddPhoto() {
   const dispatch = useDispatch();
   const { uploadedPhoto } = useSelector((state) => state.uploadedPhotosReducer);
+
   const addingUploadedPhoto = (e) => {
     e.preventDefault();
     const input = document.createElement("input");
@@ -44,7 +45,7 @@ function AddPhoto() {
           <span className="add__media_photo_photo_add_btn_txt">Add Photo</span>
         </div>
         {uploadedPhoto.map((uploadedPhoto, index) => (
-          <AddPhotoImg key={uploadedPhoto.id} index={index} />
+          <AddPhotoImg key={index} index={index} />
         ))}
       </div>
     </div>

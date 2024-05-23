@@ -13,8 +13,6 @@ function AddPhotoImg({ index }) {
 
   const { uploadedPhoto } = useSelector((state) => state.uploadedPhotosReducer);
 
-  console.log(uploadedPhoto);
-
   return (
     <div className="add__media_photo_photo">
       <img
@@ -24,7 +22,7 @@ function AddPhotoImg({ index }) {
       />
       <div
         className="add__media_photo_photo_trash_container"
-        onClick={handleDeletingUploadedPhoto[index]}
+        onClick={handleDeletingUploadedPhoto}
       >
         <img src={trash} alt="" className="add__media_photo_photo_trash" />
       </div>
