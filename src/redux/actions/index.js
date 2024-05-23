@@ -32,3 +32,13 @@ export const decrementSepInputs = (index) => ({
   type: "DECREMENT-SEPINPUTS",
   payload: index,
 });
+
+export const addUploadedPhoto = (photo) => ({
+  type: "ADD_UPLOADED_PHOTO",
+  payload: photo,
+});
+
+export const deletingUploadedPhoto = (index) => ({
+  type: "DELETE_UPLOADED_PHOTO",
+  payload: index,
+});

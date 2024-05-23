@@ -28,7 +28,7 @@ function AddPrices() {
               value="1"
               className="add__prices_checkBox_input"
             />
-            <div class="checkmark"></div>
+            <div className="checkmark"></div>
           </div>
           <span className="add__prices_checkBox_span">
             Same price for all clients
@@ -45,7 +45,7 @@ function AddPrices() {
               value="2"
               className="add__prices_checkBox_input"
             />
-            <div class="checkmark"></div>
+            <div className="checkmark"></div>
           </div>
           <span className="add__prices_checkBox_span">Separate prices</span>
         </label>

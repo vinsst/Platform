@@ -1,6 +1,5 @@
-// counterSepInputsReducer.js
 const initialState = {
-  inputs: [], // Track inputs by their index
+  inputs: [],
 };
 
 const counterSepInputsReducer = (state = initialState, action) => {

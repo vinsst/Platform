@@ -6,7 +6,7 @@ function AddMedia() {
   return (
     <>
       <AddPhoto />
-      <AddVideo />
+      {/* <AddVideo /> */}
     </>
   );
 }

@@ -15,8 +15,6 @@ function BackNext() {
     dispatch(decrementLines()); //redux
   };
 
-  console.log(lineNum);
-
   return (
     <div className="Add__back_next_container">
       <div

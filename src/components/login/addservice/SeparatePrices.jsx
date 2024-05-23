@@ -4,7 +4,7 @@ import SeparatePricesInput from "./SeparatePricesInput";
 import plusCircle from "../../../assets/img/plusCircle.svg";
 
 import { useSelector, useDispatch } from "react-redux";
-import { incrementSepInputs, decrementSepInputs } from "../../../redux/actions";
+import { incrementSepInputs } from "../../../redux/actions";
 
 function SeparatePrices() {
   const { inputs } = useSelector((state) => state.counterSepInputsReducer);
