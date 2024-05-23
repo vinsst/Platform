@@ -42,3 +42,13 @@ export const deletingUploadedPhoto = (index) => ({
   type: "DELETE_UPLOADED_PHOTO",
   payload: index,
 });
+
+export const addUploadedVideo = (video) => ({
+  type: "ADD_UPLOADED_VIDEO",
+  payload: video,
+});
+
+export const deletingUploadedVideo = (index) => ({
+  type: "DELETE_UPLOADED_VIDEO",
+  payload: index,
+});

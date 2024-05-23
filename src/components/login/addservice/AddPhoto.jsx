@@ -11,11 +11,15 @@ function AddPhoto() {
 
   const addingUploadedPhoto = (e) => {
     e.preventDefault();
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = "image/*";
-    input.onchange = handleFileInputChange;
-    input.click();
+    if (uploadedPhoto.length < 20) {
+      const input = document.createElement("input");
+      input.type = "file";
+      input.accept = "image/*";
+      input.onchange = handleFileInputChange;
+      input.click();
+    } else {
+      alert("Maximum 20 photos can be uploaded.");
+    }
   };
 
   const handleFileInputChange = (e) => {
@@ -31,7 +35,7 @@ function AddPhoto() {
 
   return (
     <div className="add__media_photo_container">
-      <div className="add__media_photo_h">Upload up to 20 photo</div>
+      <div className="add__media_photo_h">Upload up to 20 photos</div>
       <div className="add__media_photo_photo_container">
         <div
           className="add__media_photo_photo_add_btn"
