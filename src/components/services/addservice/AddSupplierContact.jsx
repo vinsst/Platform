@@ -12,12 +12,12 @@ function AddSupplierContact({ whoseContacts }) {
             Email
           </label>
           <input
-            type="text"
+            type="email"
             className="add__supplier_inp_left add__supplier_inp"
             required
           />
         </div>
-        <div className="add__supplier_input_container">
+        <div className="add__supplier_input_container add__supplier_input_container_left">
           <label htmlFor="contactPhone" className="input-label">
             Phone number
           </label>
