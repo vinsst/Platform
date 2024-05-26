@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import logo from "../../assets/img/logo.svg";
 
+import LoginForm from "./LoginForm";
+
 function RightMain() {
   const [email, setEmail] = useState("");
 
@@ -23,6 +25,25 @@ function RightMain() {
     }
   };
 
+  const inputs = [
+    {
+      type: "email",
+      value: email,
+      onChange: (e) => setEmail(e.target.value),
+      placeholder: "E-mail",
+      required: true,
+    },
+  ];
+
+  const additionalLinks = [
+    {
+      to: "/login",
+      className: "login__RightMain_el_have_acc",
+      spanClassName: "login__RightMain_el_txt",
+      text: "Login",
+    },
+  ];
+
   return (
     <div className="login_RightMain">
       <div className="login__RightMain_content">
@@ -36,24 +57,12 @@ function RightMain() {
         <span className="login__RightMain_email_send_txt">
           We will send new password to your email
         </span>
-        <form className="login__RightMain_inputs" onSubmit={handleSubmit}>
-          <input
-            type="email"
-            className="login__RightMain_input"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-mail"
-            required
-          />
-          <button className="login__RightMain_el_sign_up_btn" type="submit">
-            <span className="login__RightMain_el_sign_up_btn_txt">
-              Send Password
-            </span>
-          </button>
-        </form>
-        <Link to="/login" className="login__RightMain_el_have_acc">
-          <span className="login__RightMain_el_txt">Login</span>
-        </Link>
+        <LoginForm
+          inputs={inputs}
+          buttonText="Send Password"
+          onSubmit={handleSubmit}
+          additionalLinks={additionalLinks}
+        />
       </div>
     </div>
   );
