@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import RightMainRoutes from "../../services/RightMainRoutes";
+import RightMainRoutes from "../myServices/RightMainRoutes";
 import BackNext from "./BackNext";
 import AddNumberLine from "./AddNumberLine";
 import AddGeneral from "./AddGeneral";

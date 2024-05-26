@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import edit from "../../assets/img/edit.svg";
-import pause from "../../assets/img/pause.svg";
-import verticalPoints from "../../assets/img/verticalPoints.svg";
+import edit from "../../../assets/img/edit.svg";
+import pause from "../../../assets/img/pause.svg";
+import verticalPoints from "../../../assets/img/verticalPoints.svg";
 
 function RightMainService() {
   const [isEditing, setIsEditing] = useState(false);

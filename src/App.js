@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Platform from "./pages/platform.jsx";
+import Services from "./pages/services.jsx";
 import AddService from "./pages/addService.jsx";
 import SignUp from "./pages/signUp.jsx";
 import Login from "./pages/login.jsx";
@@ -13,7 +13,7 @@ function App() {
     <div className="wrapper">
       <div className="content">
         <Routes>
-          <Route path="/my-services" element={<Platform />} />
+          <Route path="/my-services" element={<Services />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/restore" element={<Restore />} />

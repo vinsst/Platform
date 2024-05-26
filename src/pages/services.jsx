@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 import LeftNav from "../components/leftFullNav/LeftNav";
-import AddRightMain from "../components/services/addservice/AddRightMain";
+import RightMain from "../components/services/myServices/RightMain";
 
-function AddService() {
+function Services() {
   return (
     <main className="homeMain">
       <LeftNav />
-      <AddRightMain />
+      <RightMain />
     </main>
   );
 }
 
-export default AddService;
+export default Services;
