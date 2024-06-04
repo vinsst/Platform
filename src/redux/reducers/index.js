@@ -5,6 +5,11 @@ import showingNavReducer from "./showingNav";
 import counterSepInputsReducer from "./counterSepInputs";
 import uploadedPhotosReducer from "./uploadedPhotos";
 import uploadedVideosReducer from "./uploadedVideos";
+import nameDescriptionServiceReducer from "./nameDescriptionService";
+import samePriceReducer from "./samePrice";
+import separatePricesReducer from "./separatePrices";
+import supplierStaticReducer from "./supplierStatic";
+import supplierPlusReducer from "./supplierPlus";
 
 const allReducers = combineReducers({
   counterReducer,
@@ -13,6 +18,11 @@ const allReducers = combineReducers({
   counterSepInputsReducer,
   uploadedPhotosReducer,
   uploadedVideosReducer,
+  nameDescriptionServiceReducer,
+  samePriceReducer,
+  separatePricesReducer,
+  supplierStaticReducer,
+  supplier: supplierPlusReducer,
 });
 
 export default allReducers;

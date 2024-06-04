@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import AddSupplierContact from "./AddSupplierContact";
 import AddSuplierStatic from "./AddSuplierStatic";
 import plusCircle from "../../../assets/img/plusCircle.svg";
+import { setSupplierPlusContact } from "../../../redux/actions";
 
 function AddSupplier() {
   const [supplierContactLinesNumber, setsupplierContactLinesNumber] =
     useState(0);
+  const dispatch = useDispatch();
 
   const plusContactLines = () => {
+    dispatch(setSupplierPlusContact({ email: "", phoneNum: "" }));
     setsupplierContactLinesNumber(supplierContactLinesNumber + 1);
   };
 
@@ -25,10 +29,10 @@ function AddSupplier() {
   return (
     <form className="add__supplier_container">
       <AddSuplierStatic />
-
       {[...Array(supplierContactLinesNumber)].map((_, index) => (
         <AddSupplierContact
           key={index}
+          index={index}
           whoseContacts={getWhoseContacts(index)}
         />
       ))}

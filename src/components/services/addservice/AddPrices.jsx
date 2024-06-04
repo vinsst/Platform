@@ -1,17 +1,22 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { clearSamePrice, clearSeparatePrices } from "../../../redux/actions";
 import SamePrices from "./SamePrices";
 import SeparatePrices from "./SeparatePrices";
 import plusCircle from "../../../assets/img/plusCircle.svg";
 
 function AddPrices() {
   const [separate, setSeparate] = useState(false);
+  const dispatch = useDispatch();
 
   const handleRadio1Click = () => {
     setSeparate(false);
+    dispatch(clearSeparatePrices());
   };
 
   const handleRadio2Click = () => {
     setSeparate(true);
+    dispatch(clearSamePrice());
   };
 
   return (
