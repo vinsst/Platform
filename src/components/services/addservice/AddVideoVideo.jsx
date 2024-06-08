@@ -16,7 +16,6 @@ function AddVideoVideo({ index }) {
   return (
     <div className="add__media_photo_photo">
       <video
-        autoPlay
         src={uploadedVideo[index]}
         alt=""
         className="add__media_photo_photo_add_btn_img"

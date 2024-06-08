@@ -11,14 +11,14 @@ function AddVideo() {
 
   const addingUploadedVideo = (e) => {
     e.preventDefault();
-    if (uploadedVideo.length < 5) {
+    if (uploadedVideo.length < 2) {
       const input = document.createElement("input");
       input.type = "file";
       input.accept = "video/*";
       input.onchange = handleFileInputChange;
       input.click();
     } else {
-      alert("Maximum 5 videos can be uploaded.");
+      alert("Maximum 2 videos can be uploaded.");
     }
   };
 
@@ -36,7 +36,7 @@ function AddVideo() {
   return (
     <div className="add__media_photo_container">
       <div className="add__media_video_h1">Video</div>
-      <div className="add__media_video_h2">Upload up to 5 video</div>
+      <div className="add__media_video_h2">Upload up to 2 video</div>
       <div className="add__media_photo_photo_container">
         <div
           className="add__media_photo_photo_add_btn"

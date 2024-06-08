@@ -1,22 +1,29 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { clearSamePrice, clearSeparatePrices } from "../../../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  clearSamePrice,
+  clearSeparatePriceText,
+  deleteSepInputs,
+  setSelectedRadio,
+} from "../../../redux/actions";
 import SamePrices from "./SamePrices";
 import SeparatePrices from "./SeparatePrices";
-import plusCircle from "../../../assets/img/plusCircle.svg";
 
 function AddPrices() {
-  const [separate, setSeparate] = useState(false);
   const dispatch = useDispatch();
+  const selectedRadio = useSelector(
+    (state) => state.radioReducer.selectedRadio
+  );
 
   const handleRadio1Click = () => {
-    setSeparate(false);
-    dispatch(clearSeparatePrices());
+    dispatch(clearSeparatePriceText());
+    dispatch(deleteSepInputs());
+    dispatch(setSelectedRadio("1"));
   };
 
   const handleRadio2Click = () => {
-    setSeparate(true);
     dispatch(clearSamePrice());
+    dispatch(setSelectedRadio("2"));
   };
 
   return (
@@ -32,6 +39,8 @@ function AddPrices() {
               name="choice"
               value="1"
               className="add__prices_checkBox_input"
+              checked={selectedRadio === "1"}
+              readOnly
             />
             <div className="checkmark"></div>
           </div>
@@ -49,13 +58,15 @@ function AddPrices() {
               name="choice"
               value="2"
               className="add__prices_checkBox_input"
+              checked={selectedRadio === "2"}
+              readOnly
             />
             <div className="checkmark"></div>
           </div>
           <span className="add__prices_checkBox_span">Separate prices</span>
         </label>
       </div>
-      {separate ? <SeparatePrices /> : <SamePrices />}
+      {selectedRadio === "2" ? <SeparatePrices /> : <SamePrices />}
     </div>
   );
 }

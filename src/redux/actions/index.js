@@ -22,15 +22,8 @@ export const decrementLines = () => {
   };
 };
 
-export const incrementSepInputs = () => {
-  return {
-    type: "INCREMENT-SEPINPUTS",
-  };
-};
-
-export const decrementSepInputs = (index) => ({
-  type: "DECREMENT-SEPINPUTS",
-  payload: index,
+export const deleteSepInputs = () => ({
+  type: "DELETE-SEPINPUTS",
 });
 
 export const addUploadedPhoto = (photo) => ({
@@ -72,25 +65,6 @@ export const clearSamePrice = () => ({
   type: "CLEAR_SAME_PRICE",
 });
 
-export const addSeparatePrice = (price) => ({
-  type: "ADD_SEPARATE_PRICE",
-  payload: price,
-});
-
-export const setSeparatePriceText = (index, text) => ({
-  type: "SET_SEPARATE_PRICE_TEXT",
-  payload: { index, text },
-});
-
-export const clearSeparatePrices = () => ({
-  type: "CLEAR_SEPARATE_PRICES",
-});
-
-export const deleteSeparatePrice = (index) => ({
-  type: "DELETE_SEPARATE_PRICE",
-  payload: index,
-});
-
 export const setSupplierName = (name) => ({
   type: "SET_SUPPLIER_NAME",
   payload: name,
@@ -114,4 +88,28 @@ export const setSupplierPlusContact = (contact) => ({
 export const updateSupplierPlusContact = (index, contact) => ({
   type: "UPDATE_SUPPLIER_PLUS_CONTACT",
   payload: { index, contact },
+});
+
+export const setSeparatePriceText = (pricetxt) => ({
+  type: "SET_SEPARATE_PRICE_TEXT",
+  payload: pricetxt,
+});
+
+export const updateSeparatePriceText = (index, pricetxt) => ({
+  type: "UPDATE_SEPARATE_PRICE_TEXT",
+  payload: { index, pricetxt },
+});
+
+export const clearSeparatePriceText = () => ({
+  type: "CLEAR_SEPARATE_PRICE_TEXT",
+});
+
+export const deleteSeparatePriceText = (index) => ({
+  type: "DELETE_SEPARATE_PRICE_TEXT",
+  payload: index,
+});
+
+export const setSelectedRadio = (value) => ({
+  type: "SET_SELECTED_RADIO",
+  payload: value,
 });

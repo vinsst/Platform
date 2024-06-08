@@ -1056,3 +1056,12 @@ footer {
 .AddSupplierContact_inputs {
   display: flex;
 }
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.prices__separatePrices_inp_2 {
+  -moz-appearance: textfield;
+}

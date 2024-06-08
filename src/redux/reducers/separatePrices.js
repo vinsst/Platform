@@ -1,17 +1,39 @@
-const separatePricesReducer = (state = [], action) => {
+const initialState = {
+  pricetxtMassive: [],
+};
+
+const separatePricesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_SEPARATE_PRICE":
-      return [...state, { value: action.payload, text: "" }];
-    case "DELETE_SEPARATE_PRICE":
-      return state.filter((price, idx) => idx !== action.payload);
     case "SET_SEPARATE_PRICE_TEXT":
-      return state.map((price, idx) =>
-        idx === action.payload.index
-          ? { ...price, text: action.payload.text }
-          : price
+      return {
+        ...state,
+        pricetxtMassive: [...state.pricetxtMassive, action.payload],
+      };
+    case "UPDATE_SEPARATE_PRICE_TEXT":
+      const updatedPricetxtMassive = state.pricetxtMassive.map(
+        (pricetxt, index) => {
+          if (index === action.payload.index) {
+            return action.payload.pricetxt;
+          }
+          return pricetxt;
+        }
       );
-    case "CLEAR_SEPARATE_PRICES":
-      return [];
+      return {
+        ...state,
+        pricetxtMassive: updatedPricetxtMassive,
+      };
+    case "DELETE_SEPARATE_PRICE_TEXT":
+      return {
+        ...state,
+        pricetxtMassive: state.pricetxtMassive.filter(
+          (_, index) => index !== action.payload
+        ),
+      };
+    case "CLEAR_SEPARATE_PRICE_TEXT":
+      return {
+        ...state,
+        pricetxtMassive: [],
+      };
     default:
       return state;
   }

@@ -4,8 +4,12 @@ import { setSamePrice } from "../../../redux/actions";
 
 function SamePrices() {
   const dispatch = useDispatch();
-  const savedValue = useSelector((state) => state.samePrice);
+  const savedValue = useSelector((state) => state.samePriceReducer);
   const [value, setValue] = useState(savedValue);
+
+  useEffect(() => {
+    setValue(savedValue);
+  }, [savedValue]);
 
   const handleChange = (e) => {
     const inputValue = e.target.value;
@@ -13,10 +17,6 @@ function SamePrices() {
     setValue(numericValue);
     dispatch(setSamePrice(numericValue));
   };
-
-  useEffect(() => {
-    setValue(savedValue);
-  }, [savedValue]);
 
   return (
     <input

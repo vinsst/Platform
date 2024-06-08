@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setSupplierName,
@@ -8,9 +8,15 @@ import {
 
 function AddSuplierStatic() {
   const dispatch = useDispatch();
-  const supplierName = useSelector((state) => state.supplierName);
-  const supplierPhone = useSelector((state) => state.supplierPhone);
-  const supplierEmail = useSelector((state) => state.supplierEmail);
+  const supplierName = useSelector(
+    (state) => state.supplierStaticReducer.supplierName
+  );
+  const supplierPhone = useSelector(
+    (state) => state.supplierStaticReducer.supplierPhone
+  );
+  const supplierEmail = useSelector(
+    (state) => state.supplierStaticReducer.supplierEmail
+  );
 
   const handleNameChange = (e) => {
     dispatch(setSupplierName(e.target.value));
@@ -23,6 +29,12 @@ function AddSuplierStatic() {
   const handleEmailChange = (e) => {
     dispatch(setSupplierEmail(e.target.value));
   };
+
+  useEffect(() => {
+    dispatch(setSupplierName(supplierName));
+    dispatch(setSupplierPhone(supplierPhone));
+    dispatch(setSupplierEmail(supplierEmail));
+  }, [supplierName, supplierPhone, supplierEmail, dispatch]);
 
   return (
     <div>

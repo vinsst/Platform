@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setServiceName, setServiceDescription } from "../../../redux/actions";
 
 function AddGeneral() {
   const dispatch = useDispatch();
-  const serviceName = useSelector((state) => state.serviceName);
-  const serviceDescription = useSelector((state) => state.serviceDescription);
+  const serviceName = useSelector(
+    (state) => state.nameDescriptionServiceReducer.serviceName
+  );
+  const serviceDescription = useSelector(
+    (state) => state.nameDescriptionServiceReducer.serviceDescription
+  );
+
+  useEffect(() => {
+    dispatch(setServiceName(serviceName));
+    dispatch(setServiceDescription(serviceDescription));
+  }, [serviceName, serviceDescription, dispatch]);
 
   return (
     <div className="add__genInfo_container">

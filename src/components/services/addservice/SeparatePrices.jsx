@@ -1,17 +1,15 @@
 import React from "react";
 import SeparatePricesInput from "./SeparatePricesInput";
-
 import plusCircle from "../../../assets/img/plusCircle.svg";
-
 import { useSelector, useDispatch } from "react-redux";
-import { incrementSepInputs } from "../../../redux/actions";
+import { setSeparatePriceText } from "../../../redux/actions";
 
 function SeparatePrices() {
-  const { inputs } = useSelector((state) => state.counterSepInputsReducer);
+  const inputMassive = useSelector((state) => state.separate.pricetxtMassive);
   const dispatch = useDispatch();
 
   const addingInputs = () => {
-    dispatch(incrementSepInputs()); //redux
+    dispatch(setSeparatePriceText({ txt: "", price: "" }));
   };
 
   return (
@@ -23,8 +21,8 @@ function SeparatePrices() {
         <span className="prices__separatePrices_price">Price</span>
       </div>
       <div className="prices__separatePrices_inputs">
-        {inputs.map((input, index) => (
-          <SeparatePricesInput key={input.id} index={index} />
+        {inputMassive.map((input, index) => (
+          <SeparatePricesInput key={index} index={index} />
         ))}
       </div>
       <div className="add__prices_addLine" onClick={addingInputs}>
