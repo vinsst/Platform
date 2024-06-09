@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import edit from "../../../assets/img/edit.svg";
 import pause from "../../../assets/img/pause.svg";
 import verticalPoints from "../../../assets/img/verticalPoints.svg";
@@ -75,16 +77,16 @@ function RightMainService() {
           </div>
         ) : (
           <div className="rightMain__content_service_btns_content">
-            <div
+            <Link
+              to="/my-services/view-service"
               className="rightMain__content_service_btns_content_add_clicking"
-              onClick={changeEditingStatus}
             >
               <img
                 src={edit}
                 alt=""
                 className="rightMain__content_service_btn"
               />
-            </div>
+            </Link>
 
             <img
               src={pause}

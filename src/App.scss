@@ -1065,3 +1065,170 @@ footer {
 .prices__separatePrices_inp_2 {
   -moz-appearance: textfield;
 }
+
+.rightMain__content_routeName_viewService {
+  color: #bfbfbf;
+}
+
+.rightMain__content_add_txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.rightMain__content_add_right {
+  display: flex;
+  align-items: center;
+}
+
+.rightMain__content_add_addPriceList {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.rightMain__content_add_share {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.rightMain__content_add_img {
+  margin-right: 10px;
+}
+
+.viewService__NameDesription_name {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+
+.viewService_NameDesription {
+  margin-bottom: 40px;
+}
+
+.viewService__NameDesription_description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 840px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.viewService__prices_h {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.viewService__prices_name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.viewService__prices_price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.viewService__prices_value {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.viewService__prices_name {
+  width: 420px;
+}
+
+.rightMain__content_add_view {
+  margin: 30px 0;
+}
+
+.viewService_supplier_personalData {
+  margin-bottom: 40px;
+}
+
+.viewService_supplier_h {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.viewService_supplier_sb {
+  margin-bottom: 40px;
+}
+
+.viewService_supplier_contactTxt {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.viewService_supplier_contactValue {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.viewService_prices {
+  margin-bottom: 40px;
+}
+
+.viewService_supplier_contact_container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.viewService_supplier_contactDots {
+  flex-grow: 1;
+  height: 1px;
+  border-bottom: 1px dotted black;
+  margin: 0 10px;
+}
+
+.viewService_supplier {
+  max-width: 840px;
+}
+
+.viewService_photos {
+  width: 1080px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.viewService__photos_bigPhoto {
+  background: #d1d2df;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.viewService__photos_smallPhoto {
+  background: #d1d2df;
+  width: 255px;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.viewService__photos_sideLeft {
+  width: 530px;
+  height: 380px;
+  margin-right: 20px;
+}
+
+.viewService__photos_sideRight {
+  width: 530px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

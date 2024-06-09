@@ -1,9 +1,9 @@
 import React from "react";
 
 import LeftNav from "../components/leftFullNav/LeftNav";
-import RightMain from "../components/services/myServices/RightMain";
+import RightMain from "../components/services/viewService/RightMain";
 
-function Services() {
+function viewService() {
   return (
     <main className="homeMain">
       <LeftNav />
@@ -12,4 +12,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default viewService;
