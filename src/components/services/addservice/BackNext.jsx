@@ -58,7 +58,7 @@ function BackNext() {
         samePrice,
         separatePrices,
         uploadedPhoto,
-        uploadedVideo,
+        // uploadedVideo,
         supplierName,
         supplierPhone,
         supplierEmail,
