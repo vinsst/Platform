@@ -17,7 +17,13 @@ function RightMainRoutes() {
         <span className="rightMain__content_slash rightMain__content_routeName_lighter">
           /
         </span>
-        <span className="rightMain__content_routeName">My Services</span>
+        <span className="rightMain__content_routeName rightMain__content_routeName_lighter">
+          My Services
+        </span>
+        <span className="rightMain__content_slash rightMain__content_routeName_lighter">
+          /
+        </span>
+        <span className="rightMain__content_routeName ">Add service</span>
       </div>
       <div
         className="rightMain__content_routes_burger"

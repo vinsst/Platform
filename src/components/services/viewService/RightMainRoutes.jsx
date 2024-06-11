@@ -14,13 +14,13 @@ function RightMainRoutes() {
     <div className="rightMain__content_routes">
       <div className="rightMain__content_routes_content">
         <img src={hatRoutes} alt="" className="rightMain__content_img" />
-        <span className="rightMain__content_slash rightMain__content_routeName_viewService">
+        <span className="rightMain__content_slash rightMain__content_routeName_lighter">
           /
         </span>
-        <span className="rightMain__content_routeName rightMain__content_routeName_viewService">
+        <span className="rightMain__content_routeName rightMain__content_routeName_lighter">
           My Services
         </span>
-        <span className="rightMain__content_slash rightMain__content_routeName_viewService">
+        <span className="rightMain__content_slash rightMain__content_routeName_lighter">
           /
         </span>
         <span className="rightMain__content_routeName ">My Service #1</span>

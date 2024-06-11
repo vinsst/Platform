@@ -216,6 +216,15 @@ footer {
   justify-content: space-between;
 }
 
+.left_nav_half {
+  min-width: 60px;
+  background: #f1f2f8;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (max-width: 629px) {
   .homeMain__left_nav {
     width: 100%;
@@ -235,6 +244,11 @@ footer {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  z-index: 10000000000;
+}
+
+.homeMain__left_nav_compo_span {
+  color: #21222d;
 }
 
 @media (min-width: 630px) {
@@ -249,9 +263,14 @@ footer {
 
 .homeMain__left_nav_logoBurger {
   display: flex;
-
   margin-bottom: 50px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.left_nav_logoBurger_half {
+  display: flex;
+  margin-bottom: 50px;
   align-items: center;
 }
 
@@ -264,6 +283,21 @@ footer {
   background: #d1d2df;
   cursor: pointer;
 }
+
+.left_nav_logo_half {
+  width: 44px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d1d2df;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14.35px;
+  margin: 0 auto;
+}
+
 .homeMain__left_nav_top {
   width: 100%;
 }
@@ -278,6 +312,10 @@ footer {
   margin-right: 10px;
 }
 
+.left_nav_compo_img_half {
+  margin: 0 auto;
+}
+
 .homeMain__left_nav_top_bottom {
   width: 100%;
   display: flex;
@@ -289,6 +327,10 @@ footer {
 .homeMain__left_nav_top_bottom_user_info {
   display: flex;
   align-items: center;
+}
+
+.left_nav_top_bottom_user_info_half {
+  margin: 0 auto;
 }
 
 .homeMain__left_nav_top_bottom_img {
@@ -336,6 +378,10 @@ footer {
   align-items: center;
   margin-bottom: 30px;
   justify-content: space-between;
+}
+
+.rightMain__content_routeName_lighter {
+  color: #bfbfbf;
 }
 
 .rightMain__content_slash {
@@ -1225,4 +1271,144 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.rightMain_task {
+  width: 100%;
+}
+
+.rightMain__content_add_sort {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.rightMain__content_add_sort_txt {
+  margin-right: 10px;
+}
+
+.rightMain__content_add_sort_arr {
+  transform: rotate(90deg);
+}
+
+.rightMain__content_add_sort_arrUp {
+  transform: rotate(-90deg);
+}
+
+.rightMain__content_add_sort_arr,
+.rightMain__content_add_sort_arrUp {
+  transition: transform 0.1s ease-in-out;
+}
+
+.rightMain__content_add_search_container {
+  width: 360px;
+  height: 50px;
+  padding: 12px 20px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #21222d;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.rightMain__content_add_search_inp {
+  width: 80%;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.rightMain__task_static {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #d1d2df;
+
+  padding-bottom: 10px;
+}
+
+.rightMain__task_static_txtParr_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightMain__task_static_name {
+  width: 14%;
+}
+
+.rightMain__task_static_type {
+  width: 14%;
+}
+
+.rightMain__task_static_time {
+  width: 12%;
+}
+
+.rightMain__task_static_desc {
+  width: 20%;
+}
+
+.rightMain__task_static_user {
+  width: 26%;
+}
+
+.rightMain__task_static_txt {
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #535460;
+}
+
+.task_compo {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d2df;
+  padding: 16px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #21222d;
+}
+
+.task_compo_left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.task_calendar {
+  margin-right: 10px;
+}
+
+.task_compo_user_ava,
+.task_compo_user_set_img,
+.rightMain__task_upDown_img {
+  height: 18px;
+}
+
+.task_compo_user_mailText,
+.rightMain__task_static_txt {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #535460;
+  margin: 0;
+}
+.task_compo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.task_compo_left {
+  flex: 1;
+}
+
+.task_compo_threeDots {
+  position: absolute;
+  right: 0;
 }
