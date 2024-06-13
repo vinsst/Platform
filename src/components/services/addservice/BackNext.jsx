@@ -4,24 +4,32 @@ import axios from "axios";
 import { incrementLines, decrementLines } from "../../../redux/actions";
 
 function BackNext() {
-  const { lineNum } = useSelector((state) => state.counterLinesReducer);
-  const { serviceName, serviceDescription } = useSelector(
-    (state) => state.nameDescriptionServiceReducer
+  const { lineNum } = useSelector(
+    (state) => state.services.counterLinesReducer
   );
-  const samePrice = useSelector((state) => state.samePriceReducer);
-  const separatePrices = useSelector((state) => state.separate.pricetxtMassive);
-  const { uploadedPhoto } = useSelector((state) => state.uploadedPhotosReducer);
-  const { uploadedVideo } = useSelector((state) => state.uploadedVideosReducer);
+  const { serviceName, serviceDescription } = useSelector(
+    (state) => state.services.nameDescriptionServiceReducer
+  );
+  const samePrice = useSelector((state) => state.services.samePriceReducer);
+  const separatePrices = useSelector(
+    (state) => state.services.separate.pricetxtMassive
+  );
+  const { uploadedPhoto } = useSelector(
+    (state) => state.services.uploadedPhotosReducer
+  );
+  const { uploadedVideo } = useSelector(
+    (state) => state.services.uploadedVideosReducer
+  );
   const supplierName = useSelector(
-    (state) => state.supplierStaticReducer.supplierName
+    (state) => state.services.supplierStaticReducer.supplierName
   );
   const supplierPhone = useSelector(
-    (state) => state.supplierStaticReducer.supplierPhone
+    (state) => state.services.supplierStaticReducer.supplierPhone
   );
   const supplierEmail = useSelector(
-    (state) => state.supplierStaticReducer.supplierEmail
+    (state) => state.services.supplierStaticReducer.supplierEmail
   );
-  const contacts = useSelector((state) => state.supplier.contacts);
+  const contacts = useSelector((state) => state.services.supplier.contacts);
 
   const dispatch = useDispatch();
 

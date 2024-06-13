@@ -5,7 +5,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { setSeparatePriceText } from "../../../redux/actions";
 
 function SeparatePrices() {
-  const inputMassive = useSelector((state) => state.separate.pricetxtMassive);
+  const inputMassive = useSelector(
+    (state) => state.services.separate.pricetxtMassive
+  );
   const dispatch = useDispatch();
 
   const addingInputs = () => {

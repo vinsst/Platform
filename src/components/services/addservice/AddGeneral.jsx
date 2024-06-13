@@ -5,10 +5,10 @@ import { setServiceName, setServiceDescription } from "../../../redux/actions";
 function AddGeneral() {
   const dispatch = useDispatch();
   const serviceName = useSelector(
-    (state) => state.nameDescriptionServiceReducer.serviceName
+    (state) => state.services.nameDescriptionServiceReducer.serviceName
   );
   const serviceDescription = useSelector(
-    (state) => state.nameDescriptionServiceReducer.serviceDescription
+    (state) => state.services.nameDescriptionServiceReducer.serviceDescription
   );
 
   useEffect(() => {

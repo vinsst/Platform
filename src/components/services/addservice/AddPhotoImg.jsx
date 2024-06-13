@@ -11,7 +11,9 @@ function AddPhotoImg({ index }) {
     dispatch(deletingUploadedPhoto(index)); //redux
   };
 
-  const { uploadedPhoto } = useSelector((state) => state.uploadedPhotosReducer);
+  const { uploadedPhoto } = useSelector(
+    (state) => state.services.uploadedPhotosReducer
+  );
 
   return (
     <div className="add__media_photo_photo">

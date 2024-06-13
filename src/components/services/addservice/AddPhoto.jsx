@@ -7,7 +7,9 @@ import { addUploadedPhoto } from "../../../redux/actions";
 
 function AddPhoto() {
   const dispatch = useDispatch();
-  const { uploadedPhoto } = useSelector((state) => state.uploadedPhotosReducer);
+  const { uploadedPhoto } = useSelector(
+    (state) => state.services.uploadedPhotosReducer
+  );
 
   const addingUploadedPhoto = (e) => {
     e.preventDefault();

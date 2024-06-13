@@ -12,7 +12,7 @@ import SeparatePrices from "./SeparatePrices";
 function AddPrices() {
   const dispatch = useDispatch();
   const selectedRadio = useSelector(
-    (state) => state.radioReducer.selectedRadio
+    (state) => state.services.radioReducer.selectedRadio
   );
 
   const handleRadio1Click = () => {

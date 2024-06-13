@@ -26,8 +26,8 @@ function LeftNav() {
         <LeftNavCompo img={nav_left} />
         <LeftNavCompo img={tabler_folder} />
         <LeftNavCompo img={tabler_subtask} />
-        <LeftNavCompo img={tabler_list_check} />
-        <LeftNavCompo img={calendar} />
+        <LeftNavCompo img={tabler_list_check} to="/tasks" />
+        <LeftNavCompo img={calendar} to="/calendar" />
         <LeftNavCompo img={file_text} />
         <LeftNavCompo img={message_circle} />
       </div>

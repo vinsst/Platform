@@ -4,7 +4,9 @@ import { updateSupplierPlusContact } from "../../../redux/actions";
 
 function AddSupplierContact({ index, whoseContacts }) {
   const dispatch = useDispatch();
-  const contact = useSelector((state) => state.supplier.contacts[index]) || {
+  const contact = useSelector(
+    (state) => state.services.supplier.contacts[index]
+  ) || {
     email: "",
     phoneNum: "",
   };

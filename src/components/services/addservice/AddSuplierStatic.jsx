@@ -9,13 +9,13 @@ import {
 function AddSuplierStatic() {
   const dispatch = useDispatch();
   const supplierName = useSelector(
-    (state) => state.supplierStaticReducer.supplierName
+    (state) => state.services.supplierStaticReducer.supplierName
   );
   const supplierPhone = useSelector(
-    (state) => state.supplierStaticReducer.supplierPhone
+    (state) => state.services.supplierStaticReducer.supplierPhone
   );
   const supplierEmail = useSelector(
-    (state) => state.supplierStaticReducer.supplierEmail
+    (state) => state.services.supplierStaticReducer.supplierEmail
   );
 
   const handleNameChange = (e) => {

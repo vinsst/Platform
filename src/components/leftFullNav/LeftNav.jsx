@@ -52,8 +52,8 @@ function LeftNav() {
             <LeftNavCompo img={nav_left} text="Dashboard" />
             <LeftNavCompo img={tabler_folder} text="My Services" />
             <LeftNavCompo img={tabler_subtask} text="Operations" />
-            <LeftNavCompo img={tabler_list_check} text="My Tasks" />
-            <LeftNavCompo img={calendar} text="Calendar" />
+            <LeftNavCompo img={tabler_list_check} text="My Tasks" to="/tasks" />
+            <LeftNavCompo img={calendar} text="Calendar" to="/calendar" />
             <LeftNavCompo img={file_text} text="Documents" />
             <LeftNavCompo img={message_circle} text="Chat" />
           </div>
@@ -80,8 +80,8 @@ function LeftNav() {
           <LeftNavCompo img={nav_left} text="Dashboard" />
           <LeftNavCompo img={tabler_folder} text="My Services" />
           <LeftNavCompo img={tabler_subtask} text="Operations" />
-          <LeftNavCompo img={tabler_list_check} text="My Tasks" />
-          <LeftNavCompo img={calendar} text="Calendar" />
+          <LeftNavCompo img={tabler_list_check} text="My Tasks" to="/tasks" />
+          <LeftNavCompo img={calendar} text="Calendar" to="/calendar" />
           <LeftNavCompo img={file_text} text="Documents" />
           <LeftNavCompo img={message_circle} text="Chat" />
         </div>

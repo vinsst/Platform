@@ -4,7 +4,7 @@ import { setSamePrice } from "../../../redux/actions";
 
 function SamePrices() {
   const dispatch = useDispatch();
-  const savedValue = useSelector((state) => state.samePriceReducer);
+  const savedValue = useSelector((state) => state.services.samePriceReducer);
   const [value, setValue] = useState(savedValue);
 
   useEffect(() => {

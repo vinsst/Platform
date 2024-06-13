@@ -7,7 +7,9 @@ import { addUploadedVideo } from "../../../redux/actions";
 
 function AddVideo() {
   const dispatch = useDispatch();
-  const { uploadedVideo } = useSelector((state) => state.uploadedVideosReducer);
+  const { uploadedVideo } = useSelector(
+    (state) => state.services.uploadedVideosReducer
+  );
 
   const addingUploadedVideo = (e) => {
     e.preventDefault();

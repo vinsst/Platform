@@ -6,7 +6,9 @@ import plusCircle from "../../../assets/img/plusCircle.svg";
 import { setSupplierPlusContact } from "../../../redux/actions";
 
 function AddSupplier() {
-  const contactMassive = useSelector((state) => state.supplier.contacts);
+  const contactMassive = useSelector(
+    (state) => state.services.supplier.contacts
+  );
 
   const dispatch = useDispatch();
 

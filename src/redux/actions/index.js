@@ -22,6 +22,18 @@ export const decrementLines = () => {
   };
 };
 
+export const incrementLinesCalendar = () => {
+  return {
+    type: "INCREMENT-LINENUM-CALENDAR",
+  };
+};
+
+export const decrementLinesCalendar = () => {
+  return {
+    type: "DECREMENT-LINENUM-CALENDAR",
+  };
+};
+
 export const deleteSepInputs = () => ({
   type: "DELETE-SEPINPUTS",
 });

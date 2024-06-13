@@ -9,7 +9,7 @@ import trash from "../../../assets/img/trash.svg";
 function SeparatePricesInput({ index }) {
   const dispatch = useDispatch();
   const pricetxt = useSelector(
-    (state) => state.separate.pricetxtMassive[index]
+    (state) => state.services.separate.pricetxtMassive[index]
   ) || { txt: "", price: "" };
   const [inputValues, setInputValues] = useState(pricetxt);
 

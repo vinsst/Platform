@@ -11,7 +11,9 @@ function AddVideoVideo({ index }) {
     dispatch(deletingUploadedVideo(index)); //redux
   };
 
-  const { uploadedVideo } = useSelector((state) => state.uploadedVideosReducer);
+  const { uploadedVideo } = useSelector(
+    (state) => state.services.uploadedVideosReducer
+  );
 
   return (
     <div className="add__media_photo_photo">

@@ -2,13 +2,13 @@ import React from "react";
 
 import { useSelector } from "react-redux";
 
-import RightMainRoutes from "./RightMainRoutes";
+import RightMainRoutes from "../../RightMainRoutes";
 import RightMainAdd from "./RightMainAdd";
 import RightMainZero from "./RightMainZero";
 import RightMainService from "./RightMainService";
 
 function RightMain() {
-  const { services } = useSelector((state) => state.counterReducer);
+  const { services } = useSelector((state) => state.services.counterReducer);
 
   const servicesArray = Array.from({ length: services }, (_, index) => (
     <RightMainService key={index} />
@@ -24,7 +24,7 @@ function RightMain() {
   return (
     <div className="rightMain_container container">
       <div className="rightMain_content">
-        <RightMainRoutes />
+        <RightMainRoutes routeName="My Services" showBurger />
         <RightMainAdd />
         {showZero()}
         {servicesArray}

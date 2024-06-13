@@ -1,6 +1,7 @@
+import { combineReducers } from "redux";
 import counterReducer from "./counter";
 import counterLinesReducer from "./counterLines";
-import { combineReducers } from "redux";
+import counterLinesCalendarReducer from "./counterLinesCalendar";
 import showingNavReducer from "./showingNav";
 import uploadedPhotosReducer from "./uploadedPhotos";
 import uploadedVideosReducer from "./uploadedVideos";
@@ -11,10 +12,8 @@ import supplierStaticReducer from "./supplierStatic";
 import supplierPlusReducer from "./supplierPlus";
 import radioReducer from "./radioPrice";
 
-const allReducers = combineReducers({
-  counterReducer,
-  showingNavReducer,
-  counterLinesReducer,
+// Grouping related reducers under the 'services' key
+const servicesReducers = combineReducers({
   uploadedPhotosReducer,
   uploadedVideosReducer,
   nameDescriptionServiceReducer,
@@ -22,7 +21,19 @@ const allReducers = combineReducers({
   separate: separatePricesReducer,
   supplierStaticReducer,
   supplier: supplierPlusReducer,
+  counterReducer,
+  counterLinesReducer,
   radioReducer,
+});
+
+const calendarReducers = combineReducers({
+  counterLinesCalendarReducer,
+});
+
+const allReducers = combineReducers({
+  showingNavReducer,
+  calendar: calendarReducers,
+  services: servicesReducers,
 });
 
 export default allReducers;

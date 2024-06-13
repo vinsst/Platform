@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import RightMainRoutes from "../addservice/RightMainRoutes";
+import RightMainRoutes from "../../RightMainRoutes";
 import BackNext from "./BackNext";
 import AddNumberLine from "./AddNumberLine";
 import AddGeneral from "./AddGeneral";
@@ -10,7 +10,9 @@ import AddMedia from "./AddMedia";
 import AddSupplier from "./AddSupplier";
 
 function RightMain() {
-  const { lineNum } = useSelector((state) => state.counterLinesReducer);
+  const { lineNum } = useSelector(
+    (state) => state.services.counterLinesReducer
+  );
   let componentToRender;
 
   switch (lineNum) {
@@ -33,7 +35,11 @@ function RightMain() {
   return (
     <div className="rightMain_container container">
       <div className="rightMain_content">
-        <RightMainRoutes />
+        <RightMainRoutes
+          routeName="My Services"
+          routeLabel="Add service"
+          showBurger
+        />
         <div className="addRightMain_h1">Add Service</div>
         <AddNumberLine />
         {componentToRender}

@@ -1,5 +1,5 @@
 import React from "react";
-import RightMainRoutes from "./RightMainRoutes";
+import RightMainRoutes from "../../RightMainRoutes";
 import RightMainAdd from "./RightMainAdd";
 import RightMainPhotos from "./RightMainPhotos";
 import RightMainNameDescription from "./RightMainNameDescription";
@@ -10,7 +10,11 @@ function RightMain() {
   return (
     <div className="rightMain_container container">
       <div className="rightMain_content">
-        <RightMainRoutes />
+        <RightMainRoutes
+          routeName="My Services"
+          routeLabel="My Service #1"
+          showBurger
+        />
         <RightMainAdd />
         <RightMainPhotos />
         <RightMainNameDescription />

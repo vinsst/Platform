@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 function AddNumberLine() {
-  const { lineNum } = useSelector(
-    (state) => state.services.counterLinesReducer
+  const { lineNumCalendar } = useSelector(
+    (state) => state.calendar.counterLinesCalendarReducer
   );
 
   let addH;
 
-  switch (lineNum) {
+  switch (lineNumCalendar) {
     case 1:
       addH = "General info";
       break;
     case 2:
-      addH = "Prices";
+      addH = "Groups";
       break;
     case 3:
-      addH = "Photo";
+      addH = "Users";
       break;
     case 4:
-      addH = "Supplier";
+      addH = "Automation";
       break;
     default:
       addH = "General info";
@@ -34,7 +34,7 @@ function AddNumberLine() {
             <div
               key={num}
               className={`${
-                num <= lineNum
+                num <= lineNumCalendar
                   ? "numberLine__circle numberLine__circle_black"
                   : "numberLine__circle"
               }`}
@@ -43,7 +43,7 @@ function AddNumberLine() {
             </div>
             <div
               className={`${
-                num <= lineNum
+                num <= lineNumCalendar
                   ? "numberLine_line numberLine_line_black"
                   : "numberLine_line"
               }`}
