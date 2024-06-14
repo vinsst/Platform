@@ -18,7 +18,7 @@ function RightMain() {
     if (services === 0) {
       return <RightMainZero />;
     } else {
-      return <div className="space_inst_zero"></div>;
+      return;
     }
   }
   return (

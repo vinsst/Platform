@@ -377,7 +377,6 @@ footer {
   font-size: 16px;
   color: #5d5d65;
   align-items: center;
-  margin-bottom: 30px;
   justify-content: space-between;
 }
 
@@ -473,10 +472,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.rightMain__content_zero_img {
-  margin: 30px 0 30px 0;
+  gap: 30px;
 }
 
 .rightMain__content_zero_txt1 {
@@ -488,7 +484,6 @@ footer {
 .rightMain__content_zero_txt2 {
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 30px;
 }
 
 .rightMain__content_service {
@@ -496,7 +491,6 @@ footer {
   display: flex;
   justify-content: space-between;
   background: #f1f2f8;
-  margin-bottom: 30px;
 }
 
 @media (max-width: 850px) {
@@ -591,10 +585,6 @@ footer {
   padding: 5px;
 }
 
-.space_inst_zero {
-  height: 100px;
-}
-
 .rightMain__content_service_btn_save {
   display: flex;
   background: #21222d;
@@ -654,12 +644,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+}
+
+.rightMain_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .login__RightMain_inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 }
 
 .login__RightMain_welcome {
@@ -667,7 +665,6 @@ footer {
   font-weight: 600;
   line-height: 48px;
   text-align: center;
-  margin: 24px 0 0 0;
 }
 
 .login__RightMain_el_sign_up_btn {
@@ -681,12 +678,10 @@ footer {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  margin: 24px 0 0 0;
   cursor: pointer;
 }
 
 .login__RightMain_el_have_acc {
-  margin: 24px 0 0 0;
   cursor: pointer;
   color: #535460;
 }
@@ -702,7 +697,6 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin: 24px 0 0 0;
 }
 
 .login__RightMainLogin_inputs {
@@ -716,13 +710,12 @@ footer {
 .login__RightMain_el_forgotpass {
   width: 100%;
   text-align: right;
-  margin-top: 24px;
   cursor: pointer;
   color: #535460;
 }
 
 .login__RightMain_email_send_txt {
-  margin-top: 16px;
+  margin-top: -8px;
 }
 
 .Add__back_next_container {
@@ -783,7 +776,6 @@ footer {
 .numberLine_circPline {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .numberLine_line {
@@ -796,15 +788,23 @@ footer {
   font-size: 36px;
   font-weight: 600;
   line-height: 54px;
-  margin-bottom: 30px;
 }
 
 .numberLine_h {
-  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
   color: #1e2139;
+}
+
+.numberLine_h_txt {
+  margin-bottom: 50px;
+}
+
+.add__media_photo_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .numberLine__circle_black {
@@ -819,15 +819,17 @@ footer {
 .add__genInfo_container {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .add__genInfo_input-container {
   position: relative;
-  margin-bottom: 30px;
 }
 
-.add__supplier_container {
-  margin-bottom: 30px;
+.numberLineAndTxt_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .add__supplier_input_container {
@@ -883,6 +885,18 @@ footer {
   margin-left: 30px;
 }
 
+.add__prices_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.prices__separatePrices_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .add__prices_checkBoxes {
   display: flex;
   width: 650px;
@@ -890,7 +904,6 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-bottom: 30px;
 }
 
 .add__prices_checkBox {
@@ -942,7 +955,6 @@ footer {
   font-weight: 400;
   line-height: 21px;
   color: #21222d;
-  margin-bottom: 30px;
 }
 
 .prices__separatePrices_inp_2 {
@@ -1008,7 +1020,6 @@ footer {
 .prices__separatePricesInput_container {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .prices__separatePrices_trash_container {
@@ -1020,13 +1031,11 @@ footer {
   font-weight: 400;
   line-height: 21px;
   color: #21222d;
-  margin: -20px 0 30px 0;
 }
 
 .add__media_photo_photo_container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .add__media_photo_photo_add_btn {
@@ -1082,14 +1091,13 @@ footer {
   font-weight: 600;
   line-height: 36px;
   color: #1e2139;
-  margin-bottom: 10px;
+  margin-bottom: -20px;
 }
 
 .add__media_video_h2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-bottom: 30px;
 }
 
 .AddSupplierContact_h {
@@ -1149,7 +1157,7 @@ footer {
 }
 
 .viewService_NameDesription {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .viewService__NameDesription_description {
@@ -1189,10 +1197,6 @@ footer {
   width: 420px;
 }
 
-.rightMain__content_add_view {
-  margin: 30px 0;
-}
-
 .viewService_supplier_personalData {
   margin-bottom: 40px;
 }
@@ -1221,7 +1225,7 @@ footer {
 }
 
 .viewService_prices {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .viewService_supplier_contact_container {
@@ -1244,7 +1248,7 @@ footer {
 .viewService_photos {
   width: 1080px;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .viewService__photos_bigPhoto {
@@ -1514,7 +1518,6 @@ input:focus {
 
 .addCalendar__groups_container {
   max-width: 840px;
-  margin-bottom: 30px;
 }
 
 .addCalendar__groupsCompo_container {

@@ -12,11 +12,14 @@ function CalendarConnectMail() {
           className="rightMain__content_zero_img"
           width="100px"
         />
-        <h5 className="rightMain__content_zero_txt1">Connect Your Account</h5>
-        <span className="rightMain__content_zero_txt2">
-          Clicking on “Connect” will open the Gmail connection page in order to
-          create this integration.
-        </span>
+        <div className="rightMain__content_zero_content_calendar_txt">
+          <h5 className="rightMain__content_zero_txt1">Connect Your Account</h5>
+          <span className="rightMain__content_zero_txt2">
+            Clicking on “Connect” will open the Gmail connection page in order
+            to create this integration.
+          </span>
+        </div>
+
         <div className="calendar__connect_btn_container">
           <div className="calendar__connect_btn">Connect Outlook Account</div>
           <div className="calendar__connect_btn_txt">or</div>

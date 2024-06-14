@@ -12,13 +12,15 @@ function RightMainZero() {
           className="rightMain__content_zero_img"
           width="100px"
         />
-        <h5 className="rightMain__content_zero_txt1">
-          You haven’t added any services yet
-        </h5>
-        <span className="rightMain__content_zero_txt2">
-          Try to use our pre-saved services or add Your own by clicking button
-          “Add”
-        </span>
+        <div className="rightMain__content_zero_content_services_txt">
+          <h5 className="rightMain__content_zero_txt1">
+            You haven’t added any services yet
+          </h5>
+          <span className="rightMain__content_zero_txt2">
+            Try to use our pre-saved services or add Your own by clicking button
+            “Add”
+          </span>
+        </div>
       </div>
     </div>
   );
