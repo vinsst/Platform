@@ -730,6 +730,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .Add__back_next_btns {
@@ -1509,4 +1510,57 @@ input:focus {
   height: 14px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.addCalendar__groups_container {
+  max-width: 840px;
+  margin-bottom: 30px;
+}
+
+.addCalendar__groupsCompo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+  border-bottom: 1px solid #d1d2df;
+}
+
+.addCalendar__groups_left {
+  display: flex;
+  gap: 30px;
+}
+
+.addCalendar__groups_left_colorSelector {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.addCalendar__groups_left_groupName {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.addCalendar__groups_static {
+  display: flex;
+  padding: 0px 0px 10px 54px;
+  border-bottom: 1px solid #d1d2df;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.addCalendar__groups_static_txtColor {
+  width: 88px;
+  text-align: left;
+  margin-right: 30px;
+}
+
+.addCalendar__groups_Pluscontainer {
+  width: 100%;
+  padding: 16px 0px 16px 54px;
+  gap: 10px;
+  display: flex;
+  margin: 0;
 }

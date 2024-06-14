@@ -5,6 +5,7 @@ import RightMainRoutes from "../../RightMainRoutes";
 import BackNext from "./BackNext";
 import AddNumberLine from "./AddNumberLine";
 import General from "./General";
+import Groups from "./Groups";
 
 function AddCalendarMain() {
   const { lineNumCalendar } = useSelector(
@@ -16,9 +17,9 @@ function AddCalendarMain() {
     case 1:
       componentToRender = <General />;
       break;
-    // case 2:
-    //   componentToRender = <AddGroups />;
-    //   break;
+    case 2:
+      componentToRender = <Groups />;
+      break;
     // case 3:
     //   componentToRender = <AddUsers />;
     //   break;
